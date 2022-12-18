@@ -91,6 +91,20 @@ li a {
 	width: 50%;
 }
 
+.header-skills i {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	flex-wrap: wrap;
+	font-size: 30px;
+}
+
 #about {
 	padding: 50px;
+}
+
+.project-title {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
 }
