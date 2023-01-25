@@ -17,8 +17,10 @@ body {
 
 #container {
 	display: flex;
+	justify-content: center;
 	max-width: 100%;
 	background-color: #fdfbda;
+	overflow: hidden;
 }
 
 main {
@@ -29,8 +31,8 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-	margin: 0px 150px;
-	padding: 0px 150px;
+	/* margin: 0px 150px;
+	padding: 0px 150px; */
 }
 
 #welcome-section,
