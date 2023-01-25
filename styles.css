@@ -17,6 +17,35 @@ body {
 	color: #645c5c;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+  }  
+
+::-webkit-scrollbar-track {
+	background: rgb(148, 144, 144, 0.8);
+	border-radius: 100vw;
+	margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(rgb(129, 159, 127, 0.7), rgb(45, 70, 89, 0.7));
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(rgb(45, 70, 89), rgb(129, 159, 127));
+	box-shadow: 1px 1px 10px 1px rgb(90, 82, 82);
+}
+
+@supports (scrollbar-color: blue green) {
+	* {
+		scrollbar-color: rgb(45, 70, 89) rgb(129, 159, 127);
+		scrollbar-width: thin;
+	}
+}
+
+/* content */
 #container {
 	display: flex;
 	justify-content: center;
@@ -104,11 +133,14 @@ li {
 li a {
 	text-decoration: none;
 	color: #645c5c;
+	transition: all 500ms;
+	font-size: 16px;
 }
 
 li a:hover {
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #819f7f;
 	color: #2d4659;
-	transition: 500ms;
 }
 
 #welcome-section {
@@ -208,32 +240,35 @@ hr {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 50%;
 	margin: 100px auto;
 }
 
 .additional-content.description {
 	padding-right: 15px;
+	width: 70%;
 }
 
 #about-paragraph {
 	margin-top: 20px;
-	padding-right: 15px;
 	line-height: 30px;
+	width: 85%;
 }
 
-#skills-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+.additional-content.my-photo {
 	align-items: center;
-	margin-top: 20px;
+	width: 30%;
 }
 
-#skills-container > i {
-	margin: 10px 30px;
-	font-size: 35px;
+#my-photo {
+	width: 300px;
+	max-height: 250px;
+	object-fit: cover;
+	object-position: center 100%;
+	max-width: 100%;
+  	height: auto;
+	border: 10px solid white;
+	border-radius: 6px;
+	box-shadow: 1px 1px 10px 1px rgb(90, 82, 82);
 }
 
 
@@ -276,7 +311,7 @@ hr {
 	padding-left: 30px;
 }
 
-#header-skills-container {
+#skills-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -284,7 +319,7 @@ hr {
 	align-items: center;
 }
 
-.header-skills i {
+#skills-container > i {
 	margin: 10px 30px;
 	font-size: 35px;
 }
