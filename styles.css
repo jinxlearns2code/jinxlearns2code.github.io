@@ -62,8 +62,6 @@ main {
     width: 100%;
     max-width: 1600px;
     min-height: 100vh;
-	/* margin: 0px 150px;
-	padding: 0px 150px; */
 }
 
 #welcome-section,
@@ -78,10 +76,9 @@ main {
 	min-height: 100vh;
 	margin: 0px 150px;
 	height: 100vh;
-	/* test */
-	/* border: 1px solid red; */
 }
 
+/* navbar */
 nav {
 	display: flex;
 	width: 100%;
@@ -143,6 +140,7 @@ li a:hover {
 	color: #2d4659;
 }
 
+/* welcome section */
 #welcome-section {
 	flex-direction: column;
 	align-items: flex-start;
@@ -194,6 +192,7 @@ h1 {
 	transition: 400ms;
 }
 
+/* about section */
 #about {
 	display: flex;
 	flex-direction: column;
@@ -206,7 +205,7 @@ h1 {
 	text-align: center;
 }
 
-.h4-heading {
+.h5-heading {
 	font-family: 'Poppins', sans-serif;
 	font-size: 26px;
 	font-weight: bold;
@@ -216,23 +215,24 @@ h1 {
 
 hr {
 	height: 2px;
-	width: 30%;
-	margin: auto;
+	width: 150px;
+	margin: 0px auto;
 	color: #819f7f;
 	background-color: #819f7f;
 	border: none;
 	border-radius: 10px;
 }
 
-.h4-heading.about-me {
+.h4-heading {
 	font-size: 36px;
+	color:#2d4659;
 }
 
 #about-description {
 	margin-top: 20px;
 }
 
-#additional-info {
+.additional-info {
 	display: flex;
 }
 
@@ -240,7 +240,7 @@ hr {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 100px auto;
+	margin: 70px auto;
 }
 
 .additional-content.description {
@@ -248,9 +248,12 @@ hr {
 	width: 70%;
 }
 
-#about-paragraph {
+.paragraph {
 	margin-top: 20px;
 	line-height: 30px;
+}
+
+.paragraph.about {
 	width: 85%;
 }
 
@@ -271,57 +274,48 @@ hr {
 	box-shadow: 1px 1px 10px 1px rgb(90, 82, 82);
 }
 
+.additional-info.skills {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
 
-/* .project-header-title {
-	margin-bottom: 50px;
-} */
-
-/* h3 {
-	line-height: 40px;
-} */
-
-/* .header-socials {
+.skills-container {
 	display: flex;
-	justify-content: space-around;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
-.header-socials i {
-	font-size: 20px;
-	background: #fff;
-	box-shadow: 0 2.2px 0 1.2px #e4e4e6;
-	color: black;
-	transition: all .1s;
-	border-radius: 50%;
-	border: none;
-	padding: 12px;
-	white-space: nowrap;
+.skills-container.description {
+	flex-direction: column;
+	width: 60%;
+	padding-left: 50px;
 }
 
-.header-socials i:hover {
-	transform: scale(0.95);
-	box-shadow: 0 1.8px 0 0.8px #dadadd;
-} */
-
-.additional-content.skills {
-	padding-left: 15px;
-}
-
-.h4-heading.skills {
-	padding-left: 30px;
-}
-
-#skills-container {
+.skills-container.icons {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	width: 300px;
+	max-height: 250px;
+	padding: 10px 0px;
+	background-color: white;
+	border: 10px solid white;
+	border-radius: 6px;
+	box-shadow: 1px 1px 10px 1px rgb(90, 82, 82);
 }
 
-#skills-container > i {
+.skills-container.icons > i {
 	margin: 10px 30px;
-	font-size: 35px;
+	font-size: 30px;
+	color: #2d4659;
+}
+
+/* projects section */
+#projects {
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 150px;
 }
 
 .project-title {
@@ -329,11 +323,77 @@ hr {
 	flex-direction: column;
 	margin: 50px;
 	text-decoration: none;
-	color: black;
-	border: 1px solid black;
+	color: #fdfbda;
+	border: 1px solid #949090;
 	text-align: center;
 	padding: 10px;
 	border-radius: 10px;
-	background-color: black;
-	color: white;
+	background-color: #2d4659;
+}
+
+/* socials */
+#socials, #resume {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 280px;
+	margin: 0px 30px;
+}
+
+#socials {
+	left: 0;
+}
+
+#socials i {
+	font-size: 20px;
+	color: #949090;
+	transition: all .1s;
+	white-space: nowrap;
+}
+
+#socials i:hover {
+	transform: scale(1.2);
+	text-shadow: 1px 1px 1px #2d4659;
+	color: #819f7f;
+}
+
+.vertical-line {
+	margin-top: 30px;
+	width: 1px;
+	height: 138px;
+	color: #819f7f;
+}
+
+
+
+#resume {
+	width: 44px;
+	height: 270px;
+	right: 0;
+}
+
+#resume > a {
+	display: flex;
+	align-items: center;
+}
+
+#resume > a {
+	text-decoration: none;
+	transform: rotate(90deg);
+	letter-spacing: 8px;
+	color: #949090;
+	font-size: 12px;
+}
+
+#resume > a:hover {
+	transform: rotate(90deg);
+	letter-spacing: 8px;
+	color: #819f7f;
+	text-shadow: 1px 1px 1px;
+}
+
+#resume > a::after {
+	color:#819f7f;
 }
