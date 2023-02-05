@@ -880,3 +880,17 @@ li a:hover {
 	transform: none;
 }
 }
+
+/* Scroll Margin */
+#about {
+	scroll-margin-top: 110px;
+}
+
+#projects {
+	scroll-margin-top: 110px;
+}
+
+/* #contact {
+
+} */
+
