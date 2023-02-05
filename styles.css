@@ -715,31 +715,33 @@ nav {
 ul {
 	width: 100%;
 	flex-direction: column;
-
 }
 
 li {
-	margin: 30px;
+	margin: 15px;
 	text-align: center;
 }
 
 span {
 	display: block;
 	font-family:'Courier New', Courier, monospace;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #2d4659;
 }
 
 #menu-resume {
 	display: flex;
-	margin-top: -300px;
+	width: 100px;
+	height: 40px;
+	margin-bottom: 50px;
+	font-size: .8rem;
 }
 
 li a {
 	text-decoration: none;
 	color: #645c5c;
 	transition: all 500ms;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 li a:hover {
