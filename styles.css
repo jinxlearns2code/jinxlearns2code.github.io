@@ -384,13 +384,17 @@ hr {
 .slide {
 	width: 20%;
 	transition: 2s;
+	background-color: #819f7f;
 }
 
 .slide-img {
 	transition: 1s;
 	filter: opacity(75%);
 	width: 600px;
-	height: 600px;
+	height: 535px;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: top;
 }
 
 .slide-img:hover {
@@ -557,7 +561,7 @@ footer {
 	}
 
 #projects {
-	scroll-margin-top: 40px;
+	scroll-margin-top: -10px;
 	}
 
 
@@ -765,7 +769,7 @@ li a:hover {
 
 .slide-img  {
 	width: 400px;
-	height: 400px;
+	height: 360px;
 	filter: none;
 }
 
@@ -984,7 +988,7 @@ li a:hover {
 
 .slide-img {
 	width: 300px;
-	height: 300px;
+	height: 270px;
 	filter: none;
 }
 
@@ -1043,7 +1047,7 @@ li a:hover {
 
 /* Scroll Margin */
 #projects {
-	scroll-margin-top: 200px;
+	scroll-margin-top: 160px;
 	}
 }
 
