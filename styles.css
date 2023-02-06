@@ -386,9 +386,15 @@ hr {
 	transition: 2s;
 }
 
-.slide > img {
+.slide-img {
+	transition: 1s;
+	filter: opacity(75%);
 	width: 600px;
 	height: 600px;
+}
+
+.slide-img:hover {
+	filter: none;
 }
 
 .navigation-manual, .navigation-auto {
@@ -538,11 +544,21 @@ hr {
 	color:#819f7f;
 }
 
+
 footer {
 	font-family:'Courier New', Courier, monospace;
 	font-size: 12px;
 	margin: 10px;
 }
+
+/* Scroll Margin */
+#about {
+	scroll-margin-top: 150px;
+	}
+
+#projects {
+	scroll-margin-top: 40px;
+	}
 
 
 
@@ -583,6 +599,10 @@ footer {
 		align-items: center;
 		margin-top: 150px;
 	}
+
+	/* #contact {
+
+	} */
 }
 
 
@@ -730,7 +750,7 @@ li a:hover {
 #projects {
 	justify-content: center;
 	align-items: center;
-	margin-top: 400px;
+	margin-top: 300px;
 }
 
 .selected-projects {
@@ -743,9 +763,10 @@ li a:hover {
 	height: 400px;
 }
 
-.slide > img {
+.slide-img  {
 	width: 400px;
 	height: 400px;
+	filter: none;
 }
 
 .navigation-manual, .navigation-auto {
@@ -948,7 +969,7 @@ li a:hover {
 #projects {
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 150px;
+	margin-top: 250px;
 }
 
 .selected-projects {
@@ -961,9 +982,10 @@ li a:hover {
 	height: 300px;
 }
 
-.slide > img {
+.slide-img {
 	width: 300px;
 	height: 300px;
+	filter: none;
 }
 
 .navigation-manual, .navigation-auto {
@@ -1018,18 +1040,11 @@ li a:hover {
 #resume > a:hover {
 	transform: none;
 }
-}
 
 /* Scroll Margin */
-#about {
-	scroll-margin-top: 110px;
-}
-
 #projects {
-	scroll-margin-top: 110px;
+	scroll-margin-top: 200px;
+	}
 }
 
-/* #contact {
-
-} */
 
