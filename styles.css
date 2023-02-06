@@ -240,6 +240,7 @@ h1 {
 	justify-content: flex-start;
 	align-items: center;
 	margin: 100px 0 0 0;
+	flex-wrap: nowrap;
 }
 
 #about-me {
@@ -334,6 +335,7 @@ hr {
 	gap: 1.5vw;
 	text-align: center;
 	width: 30%;
+	max-width: 300px;
 	max-height: 250px;
 	padding: 10px 0px;
 	background-color: white;
@@ -575,6 +577,7 @@ li a:hover {
 #about {
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .additional-info {
@@ -773,6 +776,7 @@ li a:hover {
 	flex-direction: row;
 	justify-content: center;
 	height: 100%;
+	flex-wrap: wrap;
 }
 
 .additional-info {
