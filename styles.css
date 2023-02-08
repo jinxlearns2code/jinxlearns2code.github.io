@@ -71,10 +71,11 @@ main {
 #contact {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	width: 65%;
-	height: 100vh;
-	margin: 0px auto;
+	height: auto;
+	margin: 250px auto 150px auto;
 }
 
 /* navbar */
@@ -355,9 +356,7 @@ hr {
 
 /* projects section */
 #projects {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
+	height: auto;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -573,7 +572,10 @@ footer {
 	#projects,
 	#contact {
 		width: 90%;
-		margin: 10px;
+}
+
+#welcome-section {
+	padding-top: 120px;
 }
 	
 	.big-heading {
@@ -617,7 +619,10 @@ footer {
 	#projects,
 	#contact {
 		width: 100%;
-		margin: 10px;
+}
+
+#welcome-section {
+	padding-top: 120px;
 }
 
 /* navbar */
@@ -831,7 +836,7 @@ li a:hover {
 	#projects,
 	#contact {
 		width: 100%;
-		margin: 10px;
+		margin: 200px auto 0px auto;
 }
 
 /* navbar */
@@ -973,7 +978,7 @@ li a:hover {
 #projects {
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 250px;
+	margin-bottom: 250px;
 }
 
 .selected-projects {
