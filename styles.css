@@ -14,7 +14,7 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
-	color: #5c5757;
+	color: #302d2d;
 	background-color: #f3f5f8;
 }
 
@@ -198,10 +198,11 @@ h1 {
 }
 
 .big-heading {
+	display: inline;
 	font-family: 'Poppins', sans-serif;
 	font-size: 4.5rem;
-	margin: 20px 0px 0px 0px;
 	color: #2d4659;
+	margin-top: 20px;
 }
 
 .big-heading.h3 {
@@ -659,7 +660,6 @@ footer {
 	
 	.big-heading {
 		font-size: 7vw;
-		margin: 20px 0px 0px 0px;
 	}
 
 	.skills-container {
@@ -772,7 +772,8 @@ li a:hover {
 
 /* welcome section */
 .big-heading {
-	font-size: 7vw;
+	font-size: 7vw; 
+	
 }
 
 .big-heading.h3 {
@@ -994,7 +995,7 @@ li a:hover {
 }
 
 .big-heading.h3 {
-	margin-top: -10px;
+	margin-top: -5px;
 }
 
 #header-paragraph {
