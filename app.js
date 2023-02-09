@@ -5,6 +5,10 @@ toggleButton.addEventListener('click', () => {
 	navbarLinks.classList.toggle('active')
 })
 
+navbarLinks.addEventListener('click', () => {
+	toggleButton.click();
+})
+
 let counter = 1;
 setInterval(() => {
 	document.getElementById('radio' + counter).checked = true;
