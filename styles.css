@@ -14,7 +14,8 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	font-family: 'Poppins', sans-serif;
-	color: #645c5c;
+	color: #5c5757;
+	background-color: #f3f5f8;
 }
 
 /* scrollbar */
@@ -47,12 +48,12 @@ body {
 
 /* content */
 #container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	/* background-color: #fdfbda; */
 	overflow: hidden;
 }
 
@@ -82,7 +83,7 @@ main {
 nav {
 	display: flex;
 	width: 100%;
-	height: 10%;
+	height: auto;
 	padding: 20px 50px 10px 50px;
 	position: fixed;
 	top: 0;
@@ -468,20 +469,6 @@ hr {
 	background-color: #2d4659;
 }
 
-
-/* .project-title {
-	display: flex;
-	flex-direction: column;
-	margin: 50px;
-	text-decoration: none;
-	color: #fdfbda;
-	border: 1px solid #949090;
-	text-align: center;
-	padding: 10px;
-	border-radius: 10px;
-	background-color: #2d4659;
-} */
-
 /* socials */
 #socials, #resume {
 	position: fixed;
@@ -567,7 +554,97 @@ footer {
 	scroll-margin-top: 150px;
 	}
 
+/* Background */
+.background-container {
+	position: fixed;
+	z-index: -99;
+	filter: blur(5px);
+}
 
+.background-container.first {
+	top: 600px;
+	left: 200px;
+}
+
+.background-container.second {
+	top: 120px;
+	right: 200px;
+}
+
+.background-container.first > .shape {
+	animation: animatePrimaryShapes 20s linear infinite;
+}
+
+.background-container.second > .shape {
+	animation: animateSecondaryShapes 20s linear infinite;
+}
+
+.shape {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.shape.first, .shape.fourth {
+	width: 200px;
+	height: 200px;
+	background-color: #EAC7C7;
+}
+
+.shape.second, .shape.fifth {
+	width: 150px;
+	height: 150px;
+	background-color: #A0C3D2;
+}
+
+.shape.third, .shape.sixth {
+	width: 160px;
+	height: 160px;
+	background-color: #EAE0DA;
+}
+
+.shape.first {
+	left: 250px;
+	top: -100px;
+}
+
+.shape.second {
+	left: 200px;
+	top: 150px;
+}
+
+.shape.third {
+	left: 30px;
+}
+
+.shape.fourth {
+	top: 50px;
+	right: 250px;
+}
+
+.shape.fifth {
+	top: 250px;
+	right: 100px;
+}
+
+.shape.sixth {
+	right: 30px;
+}
+
+@keyframes animatePrimaryShapes {
+	50% {
+		left: 100px;
+		top: 0px;
+	}
+}
+
+@keyframes animateSecondaryShapes {
+	50% {
+		right: 100px;
+		top: 0px;
+	}
+}
 
 /* 1st media query */
 @media (min-width:800px) and (max-width:1200px) {
@@ -841,6 +918,7 @@ li a:hover {
 	#contact {
 		width: 100%;
 		margin: 200px auto 0px auto;
+		padding: 0px 10px;
 }
 
 /* navbar */
