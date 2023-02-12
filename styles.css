@@ -68,7 +68,7 @@ main {
     min-height: 100vh;
 }
 
-#welcome-section,
+#home,
 #about,
 #projects,
 #contact {
@@ -185,13 +185,13 @@ li a:hover {
 	width: 100%;
 }
 
-/* welcome section */
-#welcome-section {
+/* home section */
+#home {
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-h1 {
+#intro-heading {
 	font-family: 'Caveat', cursive;
 	width: 100%;
 	font-size: 1.5rem;
@@ -543,7 +543,7 @@ footer {
 }
 
 /* Scroll Margin */
-#welcome-section {
+#home {
 	scroll-margin-top: 250px;
 }
 
@@ -649,14 +649,14 @@ footer {
 
 /* 1st media query */
 @media (min-width:800px) and (max-width:1200px) {
-	#welcome-section,
+	#home,
 	#about,
 	#projects,
 	#contact {
 		width: 90%;
 }
 
-#welcome-section {
+#home {
 	padding-top: 120px;
 }
 	
@@ -695,14 +695,14 @@ footer {
 
 /* 2nd media query */
 @media (min-width:480px) and (max-width:799px) {
-	#welcome-section,
+	#home,
 	#about,
 	#projects,
 	#contact {
 		width: 100%;
 }
 
-#welcome-section {
+#home {
 	padding-top: 120px;
 }
 
@@ -772,7 +772,7 @@ li a:hover {
 	display: flex;
 }
 
-/* welcome section */
+/* home section */
 .big-heading {
 	font-size: 7vw; 
 	
@@ -914,7 +914,7 @@ li a:hover {
 
 /* 3rd media query */
 @media (max-width:480px) {
-	#welcome-section,
+	#home,
 	#about,
 	#projects,
 	#contact {
@@ -991,7 +991,7 @@ li a:hover {
 	display: flex;
 }
 
-/* welcome section */
+/* home */
 .big-heading {
 	font-size: 7vw;
 }
